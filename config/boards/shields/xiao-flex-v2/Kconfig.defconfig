@@ -1,0 +1,16 @@
+if SHIELD_xiao-flex-v2_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Xiao-Flex"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_xiao-flex-v2
+
+config ZMK_SPLIT
+    default y
+
+endif

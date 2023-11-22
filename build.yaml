@@ -14,6 +14,6 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: zmk-xiao-flex-v2_left
+    shield: xiao_flex_v2_left
   - board: seeeduino_xiao_ble
-    shield: zmk-xiao-flex-v2_right
+    shield: xiao_flex_v2_right

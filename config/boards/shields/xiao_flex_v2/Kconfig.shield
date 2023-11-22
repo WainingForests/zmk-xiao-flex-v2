@@ -1,0 +1,10 @@
+config SHIELD_XIAO_FLEX_v2
+    bool
+
+config SHIELD_XIAO_FLEX_v2_LEFT
+    def_bool $(shields_list_contains,xiao_flex_v2_left)
+    select SHIELD_XIAO_FLEX_v2
+
+config SHIELD_xiao-flex-v2_RIGHT
+    def_bool $(shields_list_contains,xiao_flex_v2_right)
+    select SHIELD_XIAO_FLEX_v2

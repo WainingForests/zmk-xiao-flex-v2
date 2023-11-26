@@ -1,0 +1,10 @@
+config SHIELD_SKREETYL_CC
+    bool
+
+config SHIELD_SKREETYL_CC_LEFT
+    def_bool $(shields_list_contains,skreetyl_cc_left)
+    select SHIELD_SKREETYL_CC
+
+config SHIELD_SKREETYL_CC_RIGHT
+    def_bool $(shields_list_contains,skreetyl_cc_right)
+    select SHIELD_SKREETYL_CC

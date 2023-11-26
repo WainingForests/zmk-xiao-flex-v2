@@ -1,0 +1,14 @@
+// skreetyl_cc_left.overlay
+
+#include "skreetyl_cc.dtsi" 
+
+&kscan0 {
+    col-gpios
+        = <&gpio1 0 GPIO_ACTIVE_HIGH>
+        , <&gpio0 9 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 10 GPIO_ACTIVE_HIGH>
+        , <&xiao_d 11 GPIO_ACTIVE_HIGH>
+        ;
+};

@@ -1,6 +1,6 @@
 file_format: "1"
-id: xiao_flex_v2
-Name: xiao_flex_v2
+id: skreetyl_cc
+Name: skreetyl_cc
 type: shield
 url: https://github.com/WainingForests/zmk-config-xiao-flex-v2/
 requires: [seeed_xiao]

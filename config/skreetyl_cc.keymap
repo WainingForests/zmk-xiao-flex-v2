@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     keymap {
@@ -14,17 +15,30 @@
 
         default_layer {
             bindings = <
-&bt BT_CLR  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5    &bt BT_CLR  &bt BT_CLR  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB     &kp Q      &kp W     &kp E     &kp R      &kp T     &kp Y       &kp U       &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC     &kp A      &kp S     &kp D     &kp F      &kp G     &kp H       &kp J       &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z      &kp X     &kp C     &kp V      &kp B     &kp N       &kp M       &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
-            &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                        &kp UP      &kp DOWN   &kp LBKT  &kp RBKT
-                                           &kp N3     &kp N4                &kp D       &kp C
-                                 &kp N1    &kp N2     &kp N5    &kp E       &kp B       &kp A
-                                                      &kp N6    &kp F
+&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4     &kp N5      &bt BT_CLR  &bt BT_CLR  &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp TAB    &kp Q      &kp W     &kp E     &kp R      &kp T       &kp Y       &kp U       &kp I      &kp O     &kp P     &kp BSLH
+&kp ESC    &kp A      &kp S     &kp D     &kp F      &kp G       &kp H       &kp J       &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z      &kp X     &kp C     &kp V      &kp B       &kp N       &kp M       &kp COMMA  &kp DOT   &kp FSLH  &kp RSHIFT
+           &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                          &kp UP      &kp DOWN   &kp LBKT  &kp RBKT
+                                          &kp LCTRL  &kp LALT                &kp RGUI    &kp RCTRL
+                                &kp BSPC  &kp DEL    &kp HOME    &kp PG_UP   &kp RET     &kp SPACE
+                                                     &mo 1       &kp PG_DN
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        };
+
+        layer_1 {
+            bindings = <
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &kp KP_NUMLOCK  &kp KP_EQUAL  &kp KP_DIVIDE  &kp KP_MULTIPLY  &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &kp N7          &kp N8        &kp N9         &kp KP_MINUS     &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &kp N4          &kp N5        &kp N6         &kp KP_PLUS      &trans
+&trans      &trans        &trans        &trans        &trans        &trans          &trans  &kp N1          &kp N2        &kp N3         &kp RET          &trans
+            &trans        &trans        &trans        &trans                                &kp UP          &kp DOWN      &kp N0         &kp DOT
+                                                      &trans        &bootloader             &trans          &trans
+                                        &out OUT_TOG  &trans        &sys_reset      &trans  &trans          &trans
+                                                                    &trans          &trans
+            >;
         };
     };
 };

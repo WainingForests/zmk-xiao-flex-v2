@@ -30,7 +30,5 @@
                            &kp LCTRL  &kp LALT   &mo 2       &mo 1    &kp RALT  &kp RCTRL
             >;
         };
-            >;
-        };
     };
 };

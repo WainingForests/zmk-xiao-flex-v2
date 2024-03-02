@@ -12,6 +12,5 @@
 #     shield: reviung41
 #
 ---
-include:
 board: [ "seeeduino_xiao_ble" ]
 shield: [ "xiao_flex_v2_left", "xiao_flex_v2_right" ]

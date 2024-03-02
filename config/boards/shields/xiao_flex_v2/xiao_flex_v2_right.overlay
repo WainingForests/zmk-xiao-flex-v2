@@ -16,3 +16,10 @@
         , <&gpio1 0 GPIO_ACTIVE_HIGH>
         ;
 };
+
+&xiao_i2c {
+    status = "okay";
+    glidepoint: glidepoint@2a {
+        status = "okay";
+    };
+};

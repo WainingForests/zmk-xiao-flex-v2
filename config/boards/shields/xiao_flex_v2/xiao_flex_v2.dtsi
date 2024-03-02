@@ -24,6 +24,7 @@ RC(6,0) RC(6,1) RC(6,2) RC(6,3) RC(6,4) RC(6,5)                  RC(6,6) RC(6,7)
 
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
 
         diode-direction = "col2row";
         row-gpios
@@ -32,9 +33,47 @@ RC(6,0) RC(6,1) RC(6,2) RC(6,3) RC(6,4) RC(6,5)                  RC(6,6) RC(6,7)
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             , <&xiao_d 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
             , <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-	    , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-	    , <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
+	        , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+	        , <&gpio0 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
             ;
 
     };
+};
+
+&xiao_i2c {
+    status = "disabled";
+    glidepoint: glidepoint@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "disabled";
+        dr-gpios = <&gpio0 16 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "4x";
+        // sleep;
+        no-taps;
+    };
+        // Rotation config, from Pete
+    // This will change in the future
+    // https://discord.com/channels/719497620560543766/845285481888743434/1206407883777114182
+    input_config {
+        compatible = "zmk,input-configs";
+    
+        cirque_config {
+            device = <&glidepoint>;
+            xy-swap;
+            y-invert;
+            x-invert;
+        };
+    };
+};
+
+/ {
+  glidepoint_listener {
+    compatible = "zmk,input-listener";
+    device = <&glidepoint>;
+
+    xy-swap;
+    y-invert;
+    x-invert;
+  };
 };

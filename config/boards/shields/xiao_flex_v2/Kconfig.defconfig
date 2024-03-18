@@ -1,7 +1,7 @@
 if SHIELD_XIAO_FLEX_V2_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "xiao_flex_v2"
+    default "Skree-4x7"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y

@@ -3,7 +3,7 @@
 #include "xiao_flex_v2.dtsi"
 
 &default_transform {
-    col-offset = <6>;
+    col-offset = <7>;
 };
 
 &kscan0 {

@@ -15,11 +15,29 @@
         o: o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings    = <&macro_press   &kp LALT>
-    , <&macro_tap     &kp KP_N3 &kp KP_N3 &kp KP_N3>
-    , <&macro_release &kp LALT>
-    ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_N3 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "O";
+        };
+
+        os: os {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_N3 &kp KP_N2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "OS";
         };
     };
 
@@ -61,8 +79,8 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &trans    &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &kp UP    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans  &os     &trans  &trans  &trans    &trans       &trans    &kp UP    &trans     &trans  &trans
+&trans  &trans  &o      &trans  &trans  &trans    &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &trans    &trans     &trans  &trans
                         &trans  &trans  &trans    &bootloader  &trans    &trans
                         &mo 0   &trans  &trans    &trans       &trans    &trans

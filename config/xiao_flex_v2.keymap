@@ -15,7 +15,10 @@
         o: o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp D>;
+            bindings    = <&macro_press   &kp LALT>
+    , <&macro_tap     &kp KP_N3 &kp KP_N3 &kp KP_N3>
+    , <&macro_release &kp LALT>
+    ;
             label = "O";
         };
     };

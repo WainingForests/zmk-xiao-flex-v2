@@ -11,6 +11,15 @@
 #include <dt-bindings/zmk/rgb.h>
 
 / {
+    macros {
+        o: o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp D>;
+            label = "O";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

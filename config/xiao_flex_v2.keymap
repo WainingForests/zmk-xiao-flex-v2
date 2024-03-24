@@ -623,7 +623,7 @@
 
         czech {
             bindings = <
-&to 0   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &sl 5     &sl 3
+&to 6   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &sl 5     &sl 3
 &trans  &u_krouzek  &z_hacek  &a_carka  &r_hacek  &y_carka    &c_hacek  &e_hacek  &i_carka  &e_carka  &s_hacek  &sl 2
 &trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
 &trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
@@ -679,6 +679,20 @@
                            &trans     &trans     &trans    &trans  &trans  &trans
                            &trans     &trans     &trans    &trans  &trans  &trans
             >;
+        };
+
+        layer_6 {
+            bindings = <
+&to 1                     &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
+&sk LEFT_SHIFT            &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5    &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp EQUAL
+&sl 4                     &kp MINUS             &kp C                   &kp M                          &kp W              &kp K                  &kp Q                       &kp F            &kp R                     &kp L          &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
+&mt SEMICOLON COLON       &kp I                 &kp O                   &kp A                          &kp E              &kp V                  &kp B                       &kp T            &kp N                     &kp S          &kp H                  &kp DOWN
+&mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &kp X                   &kp P                          &kp U              &kp Z                  &kp G                       &kp D            &kp Y                     &kp J          &kp LEFT               &kp RIGHT
+                                                                        &kp TAB                        &kp SPACE          &kp ESCAPE             &kp BACKSPACE               &kp SPACE        &kp RET
+                                                                        &mt PERCENT BSLH               &kp LCTRL          &kt LGUI               &kt LALT                    &kp RCTRL        &mt PIPE SLASH
+            >;
+
+            label = "Default";
         };
     };
 };

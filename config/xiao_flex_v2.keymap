@@ -12,7 +12,7 @@
 
 / {
     macros {
-        o: o {
+        o_macron: o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -26,7 +26,7 @@
             label = "O";
         };
 
-        os: os {
+        o_macron_shift: os {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
@@ -39,12 +39,138 @@
 
             label = "OS";
         };
+
+        i_macron: i_macron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_9 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "I_MACRON";
+        };
+
+        a_macron: a_macron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "A_MACRON";
+        };
+
+        e_macron: e_macron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_7 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "E_MACRON";
+        };
+
+        u_macron: u_macron {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_NUMBER_6 &kp KP_N3>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "U_MACRON";
+        };
+
+        i_macron_shift: i_macron_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_9 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "I_MACRON_SHIFT";
+        };
+
+        a_macron_shift: a_macron_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "A_MACRON_SHIFT";
+        };
+
+        e_macron_shift: e_macron_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_7 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "E_MACRON_SHIFT";
+        };
+
+        u_macron_shift: u_macron_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_N3 &kp KP_NUMBER_6 &kp KP_N2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "U_MACRON_SHIFT";
+        };
+
+        okina: okina {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_6 &kp KP_NUMBER_9 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "OKINA";
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        english {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC   |  1  |  2  |  3   |  4   |  5   |                    |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB   |  Q  |  W  |  E   |  R   |  T   |                    |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -59,31 +185,43 @@
 &mt SEMICOLON COLON       &mt LS(I) I           &mt LS(O) O             &mt LS(A) A                    &mt LS(E) E        &mt LS(V) V            &mt LS(B) B                 &mt LS(T) T      &mt LS(N) N               &mt LS(S) S    &mt LS(H) H            &kp DOWN
 &mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &mt LS(X) X             &mt LS(P) P                    &mt LS(U) U        &mt LS(Z) Z            &mt LS(G) G                 &mt LS(D) D      &mt LS(Y) Y               &mt LS(J) J    &kp LEFT               &kp RIGHT
                                                                         &kp TAB                        &kp SPACE          &kp ESCAPE             &kp BACKSPACE               &kp SPACE        &kp RET
-                                                                        &mt PERCENT BSLH               &kp LCTRL          &kt LEFT_ALT           &kt RIGHT_ALT               &kp RCTRL        &mt PIPE SLASH
+                                                                        &mt PERCENT BSLH               &kp LCTRL          &kt LGUI               &kt LALT                    &kp RCTRL        &mt PIPE SLASH
             >;
         };
 
         layer_1 {
             bindings = <
-&bt BT_CLR       &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans
-&rgb_ug RGB_TOG  &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans
-&kp F1           &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12
-&trans           &trans        &trans        &trans        &trans        &trans          &trans           &trans           &trans           &trans           &trans           &trans
-&trans           &trans        &trans        &trans        &trans        &trans          &trans           &trans           &trans           &trans           &trans           &trans
-                                             &trans        &trans        &bootloader     &trans           &trans           &trans
-                                             &trans        &trans        &trans          &trans           &trans           &trans
+&mo 0          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans
+&kt LG(SPACE)  &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans
+&kp F1         &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12
+&trans         &trans        &trans        &trans        &trans        &trans          &trans           &mo 0            &mo 3            &trans           &trans           &trans
+&trans         &trans        &trans        &trans        &trans        &trans          &trans           &trans           &trans           &trans           &trans           &trans
+                                           &trans        &trans        &bootloader     &trans           &trans           &trans
+                                           &trans        &trans        &trans          &trans           &trans           &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &os     &trans  &trans  &trans    &trans       &trans    &kp UP    &trans     &trans  &trans
-&trans  &trans  &o      &trans  &trans  &trans    &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &trans    &trans     &trans  &trans
-                        &trans  &trans  &trans    &bootloader  &trans    &trans
-                        &mo 0   &trans  &trans    &trans       &trans    &trans
+&trans  &trans           &trans           &trans           &trans           &trans    &trans       &trans    &trans    &trans     &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans    &trans       &trans    &trans    &trans     &trans  &trans
+&trans  &i_macron_shift  &o_macron_shift  &a_macron_shift  &e_macron_shift  &trans    &trans       &trans    &kp UP    &trans     &okina  &trans
+&trans  &i_macron        &o_macron        &a_macron        &e_macron        &okina    &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
+&trans  &trans           &trans           &u_macron_shift  &u_macron        &trans    &trans       &trans    &trans    &trans     &trans  &trans
+                                          &trans           &trans           &trans    &bootloader  &trans    &trans
+                                          &mo 0            &trans           &trans    &trans       &trans    &trans
+            >;
+        };
+
+        czech {
+            bindings = <
+&trans  &trans     &trans            &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt AT N1  &mt AMPERSAND N2  &mt DOLLAR N3  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans            &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans            &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans            &trans         &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &trans         &trans  &trans    &trans  &trans  &trans
+                                     &trans         &trans  &trans    &trans  &trans  &trans
             >;
         };
     };

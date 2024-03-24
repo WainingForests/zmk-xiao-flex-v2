@@ -303,6 +303,300 @@
 
             label = "E_CARKA";
         };
+
+        o_carka: o_carka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "O_CARKA";
+        };
+
+        n_hacek: n_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "N_HACEK";
+        };
+
+        t_hacek: t_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_5 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "T_HACEK";
+        };
+
+        d_hacek: d_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_7 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "D_HACEK";
+        };
+
+        l_hacek: l_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_1 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "L_HACEK";
+        };
+
+        a_carka_shift: a_carka_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "A_CARKA_SHIFT";
+        };
+
+        c_hacek_shift: c_hacek_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_6 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "C_HACEK_SHIFT";
+        };
+
+        d_hacek_shift: d_hacek_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_7 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "D_HACEK_SHIFT";
+        };
+
+        i_carka_shift: i_carka_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_0 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "I_CARKA_SHIFT";
+        };
+
+        e_carka_shift: e_carka_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "E_CARKA_SHIFT";
+        };
+
+        n_hacek_shift: n_hacek_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_2 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "N_HACEK_SHIFT";
+        };
+
+        o_carka_shift: o_carka_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "O_CARKA_SHIFT";
+        };
+
+        r_hacek_shift: r_hacek_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_4 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "R_HACEK_SHIFT";
+        };
+
+        s_hacek_shift: s_hacek_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_N5 &kp KP_NUMBER_6>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "S_HACEK_SHIFT";
+        };
+
+        t_hacek_shift: t_hacek_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "T_HACEK_SHIFT";
+        };
+
+        u_carka_shift: u_carka_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_1 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "U_CARKA_SHIFT";
+        };
+
+        z_hacek_shift: z_hacek_shift {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "Z_HACEK_SHIFT";
+        };
+
+        a_umlaut: a_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_2>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "A_UMLAUT";
+        };
+
+        o_umlaut: o_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_4 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "O_UMLAUT";
+        };
+
+        s_sharp: s_sharp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "S_SHARP";
+        };
+
+        u_umlaut: u_umlaut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "U_UMLAUT";
+        };
     };
 
     keymap {
@@ -319,7 +613,7 @@
             bindings = <
 &kp F1                    &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
 &to 1                     &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5    &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp EQUAL
-&sl 0                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
+&sl 4                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
 &mt SEMICOLON COLON       &mt LS(I) I           &mt LS(O) O             &mt LS(A) A                    &mt LS(E) E        &mt LS(V) V            &mt LS(B) B                 &mt LS(T) T      &mt LS(N) N               &mt LS(S) S    &mt LS(H) H            &kp DOWN
 &mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &mt LS(X) X             &mt LS(P) P                    &mt LS(U) U        &mt LS(Z) Z            &mt LS(G) G                 &mt LS(D) D      &mt LS(Y) Y               &mt LS(J) J    &kp LEFT               &kp RIGHT
                                                                         &kp TAB                        &kp SPACE          &kp ESCAPE             &kp BACKSPACE               &kp SPACE        &kp RET
@@ -329,13 +623,61 @@
 
         czech {
             bindings = <
-&to 0   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
-&trans  &u_krouzek  &z_hacek  &a_carka  &r_hacek  &y_carka    &c_hacek  &e_hacek  &i_carka  &e_carka  &s_hacek  &trans
+&to 0   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &sl 5     &sl 3
+&trans  &u_krouzek  &z_hacek  &a_carka  &r_hacek  &y_carka    &c_hacek  &e_hacek  &i_carka  &e_carka  &s_hacek  &sl 2
 &trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
 &trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
 &trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
                               &trans    &trans    &trans      &trans    &trans    &trans
                               &trans    &trans    &trans      &trans    &trans    &trans
+            >;
+        };
+
+        czech_ext {
+            bindings = <
+&trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans    &l_hacek  &trans  &trans
+&trans  &trans  &o_carka  &trans  &trans  &trans    &trans  &t_hacek  &n_hacek  &trans    &trans  &trans
+&trans  &trans  &trans    &trans  &trans  &trans    &trans  &d_hacek  &trans    &trans    &trans  &trans
+                          &trans  &trans  &trans    &trans  &trans    &trans
+                          &trans  &trans  &trans    &trans  &trans    &trans
+            >;
+        };
+
+        czech_ext_shift {
+            bindings = <
+&trans  &trans          &trans          &trans          &trans          &trans            &trans  &trans          &trans          &trans          &trans  &trans
+&trans  &trans          &trans          &trans          &trans          &trans            &trans  &trans          &trans          &trans          &trans  &trans
+&trans  &trans          &c_hacek_shift  &trans          &trans          &trans            &trans  &trans          &r_hacek_shift  &trans          &trans  &trans
+&trans  &i_carka_shift  &o_carka_shift  &a_carka_shift  &e_carka_shift  &trans            &trans  &t_hacek_shift  &n_hacek_shift  &s_hacek_shift  &trans  &trans
+&trans  &trans          &trans          &trans          &u_carka_shift  &z_hacek_shift    &trans  &d_hacek_shift  &trans          &trans          &trans  &trans
+                                        &trans          &trans          &trans            &trans  &trans          &trans
+                                        &trans          &trans          &trans            &trans  &trans          &trans
+            >;
+        };
+
+        macron {
+            bindings = <
+&trans  &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &trans           &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &i_macron_shift  &o_macron_shift  &a_macron_shift  &e_macron_shift  &trans    &trans  &trans  &trans  &trans  &okina  &trans
+&trans  &i_macron        &o_macron        &a_macron        &e_macron        &okina    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans           &u_macron_shift  &u_macron        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans           &trans           &trans    &trans  &trans  &trans
+                                          &trans           &trans           &trans    &trans  &trans  &trans
+            >;
+        };
+
+        german {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &o_umlaut  &a_umlaut  &trans     &trans    &trans  &trans  &trans  &s_sharp  &trans  &trans
+&trans  &trans  &trans     &trans     &u_umlaut  &trans    &trans  &trans  &trans  &trans    &trans  &trans
+                           &trans     &trans     &trans    &trans  &trans  &trans
+                           &trans     &trans     &trans    &trans  &trans  &trans
             >;
         };
     };

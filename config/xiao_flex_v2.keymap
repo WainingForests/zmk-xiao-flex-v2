@@ -179,7 +179,7 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-&to 3                     &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
+&to 3                     &to 0                 &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
 &to 1                     &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5    &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp EQUAL
 &sl 2                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
 &mt SEMICOLON COLON       &mt LS(I) I           &mt LS(O) O             &mt LS(A) A                    &mt LS(E) E        &mt LS(V) V            &mt LS(B) B                 &mt LS(T) T      &mt LS(N) N               &mt LS(S) S    &mt LS(H) H            &kp DOWN
@@ -194,7 +194,7 @@
 &to 0   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans
 &to 0   &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans
 &kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12
-&trans  &trans        &trans        &trans        &trans        &trans          &trans           &to 0            &to 3            &trans           &trans           &trans
+&trans  &kt G         &kt F         &trans        &trans        &trans          &trans           &to 0            &to 3            &trans           &trans           &trans
 &trans  &trans        &trans        &trans        &trans        &trans          &trans           &trans           &trans           &trans           &trans           &trans
                                     &trans        &trans        &bootloader     &trans           &trans           &trans
                                     &trans        &trans        &trans          &trans           &trans           &trans

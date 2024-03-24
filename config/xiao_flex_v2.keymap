@@ -5,10 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 / {
     macros {
@@ -165,6 +163,146 @@
 
             label = "OKINA";
         };
+
+        s_hacek: s_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_4>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "S_HACEK";
+        };
+
+        u_krouzek: u_krouzek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_6 &kp KP_NUMBER_7>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "U_KROUZEK";
+        };
+
+        z_hacek: z_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_1 &kp KP_NUMBER_5 &kp KP_NUMBER_8>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "Z_HACEK";
+        };
+
+        a_carka: a_carka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "A_CARKA";
+        };
+
+        r_hacek: r_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_4 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "R_HACEK";
+        };
+
+        y_carka: y_carka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_5 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "Y_CARKA";
+        };
+
+        c_hacek: c_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_6 &kp KP_NUMBER_9>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "C_HACEK";
+        };
+
+        e_hacek: e_hacek {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_2 &kp KP_NUMBER_8 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "E_HACEK";
+        };
+
+        i_carka: i_carka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_6 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "I_CARKA";
+        };
+
+        e_carka: e_carka {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_3 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "E_CARKA";
+        };
     };
 
     keymap {
@@ -179,9 +317,9 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-&to 3                     &to 0                 &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
+&kp F1                    &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
 &to 1                     &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5    &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp EQUAL
-&sl 2                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
+&sl 0                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
 &mt SEMICOLON COLON       &mt LS(I) I           &mt LS(O) O             &mt LS(A) A                    &mt LS(E) E        &mt LS(V) V            &mt LS(B) B                 &mt LS(T) T      &mt LS(N) N               &mt LS(S) S    &mt LS(H) H            &kp DOWN
 &mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &mt LS(X) X             &mt LS(P) P                    &mt LS(U) U        &mt LS(Z) Z            &mt LS(G) G                 &mt LS(D) D      &mt LS(Y) Y               &mt LS(J) J    &kp LEFT               &kp RIGHT
                                                                         &kp TAB                        &kp SPACE          &kp ESCAPE             &kp BACKSPACE               &kp SPACE        &kp RET
@@ -189,39 +327,15 @@
             >;
         };
 
-        layer_1 {
-            bindings = <
-&to 0   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans
-&to 0   &trans        &trans        &trans        &trans        &trans          &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans
-&kp F1  &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7           &kp F8           &kp F9           &kp F10          &kp F11          &kp F12
-&trans  &kt G         &kt F         &trans        &trans        &trans          &trans           &to 0            &to 3            &trans           &trans           &trans
-&trans  &trans        &trans        &trans        &trans        &trans          &trans           &trans           &trans           &trans           &trans           &trans
-                                    &trans        &trans        &bootloader     &trans           &trans           &trans
-                                    &trans        &trans        &trans          &trans           &trans           &trans
-            >;
-        };
-
-        layer_2 {
-            bindings = <
-&trans  &trans           &trans           &trans           &trans           &trans    &trans       &trans    &trans    &trans     &trans  &trans
-&trans  &trans           &trans           &trans           &trans           &trans    &trans       &trans    &trans    &trans     &trans  &trans
-&trans  &i_macron_shift  &o_macron_shift  &a_macron_shift  &e_macron_shift  &trans    &trans       &trans    &kp UP    &trans     &okina  &trans
-&trans  &i_macron        &o_macron        &a_macron        &e_macron        &okina    &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &trans           &trans           &u_macron_shift  &u_macron        &trans    &trans       &trans    &trans    &trans     &trans  &trans
-                                          &trans           &trans           &trans    &bootloader  &trans    &trans
-                                          &mo 0            &trans           &trans    &trans       &trans    &trans
-            >;
-        };
-
         czech {
             bindings = <
-&trans  &trans     &trans            &trans               &trans               &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mt AT N1  &mt AMPERSAND N2  &mt DOLLAR N3        &trans               &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans            &trans               &trans               &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kt N1     &kt N2            &kt INTERNATIONAL_1  &kt INTERNATIONAL_2  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans            &trans               &trans               &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                     &trans               &trans               &trans    &trans  &trans  &trans
-                                     &trans               &trans               &trans    &trans  &trans  &trans
+&to 0   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &u_krouzek  &z_hacek  &a_carka  &r_hacek  &y_carka    &c_hacek  &e_hacek  &i_carka  &e_carka  &s_hacek  &trans
+&trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+                              &trans    &trans    &trans      &trans    &trans    &trans
+                              &trans    &trans    &trans      &trans    &trans    &trans
             >;
         };
     };

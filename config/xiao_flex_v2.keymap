@@ -611,7 +611,7 @@
             // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
 
             bindings = <
-&kp F1                    &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
+&to 1                     &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
 &lt 1 E                   &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5    &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp EQUAL
 &sl 4                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
 &mt SEMICOLON COLON       &mt LS(I) I           &mt LS(O) O             &mt LS(A) A                    &mt LS(E) E        &mt LS(V) V            &mt LS(B) B                 &mt LS(T) T      &mt LS(N) N               &mt LS(S) S    &mt LS(H) H            &kp DOWN
@@ -623,13 +623,13 @@
 
         czech {
             bindings = <
-&lt 0 C  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &sl 5     &sl 3
-&trans   &u_krouzek  &z_hacek  &a_carka  &r_hacek  &y_carka    &c_hacek  &e_hacek  &i_carka  &e_carka  &s_hacek  &sl 2
-&trans   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
-&trans   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
-&trans   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
-                               &trans    &trans    &trans      &trans    &trans    &trans
-                               &trans    &trans    &trans      &trans    &trans    &trans
+&trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &sl 5     &sl 3
+&trans  &u_krouzek  &z_hacek  &a_carka  &r_hacek  &y_carka    &c_hacek  &e_hacek  &i_carka  &e_carka  &s_hacek  &sl 2
+&trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans      &kp G     &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
+                              &trans    &trans    &trans      &trans    &trans    &trans
+                              &trans    &trans    &trans      &trans    &trans    &trans
             >;
         };
 

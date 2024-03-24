@@ -603,27 +603,22 @@
         compatible = "zmk,keymap";
 
         english {
-            // ------------------------------------------------------------------------------------------------------------
-            // |  ESC   |  1  |  2  |  3   |  4   |  5   |                    |  6   |  7    |  8    |  9   |   0   |   `   |
-            // |  TAB   |  Q  |  W  |  E   |  R   |  T   |                    |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // |  CTRL  |  A  |  S  |  D   |  F   |  G   |                    |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | SHIFT  |  Z  |  X  |  C   |  V   |  B   |                    |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
-
             bindings = <
 &to 1                     &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
 &sk LEFT_SHIFT            &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5    &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp EQUAL
-&sl 4                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
-&mt SEMICOLON COLON       &mt LS(I) I           &mt LS(O) O             &mt LS(A) A                    &mt LS(E) E        &mt LS(V) V            &mt LS(B) B                 &mt LS(T) T      &mt LS(N) N               &mt LS(S) S    &mt LS(H) H            &kp DOWN
-&mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &mt LS(X) X             &mt LS(P) P                    &mt LS(U) U        &mt LS(Z) Z            &mt LS(G) G                 &mt LS(D) D      &mt LS(Y) Y               &mt LS(J) J    &kp LEFT               &kp RIGHT
+&sl 4                     &kp MINUS             &kp C                   &kp M                          &kp W              &kp K                  &kp Q                       &kp F            &kp R                     &kp L          &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
+&mt SEMICOLON COLON       &kp I                 &kp O                   &kp A                          &kp E              &kp V                  &kp B                       &kp T            &kp N                     &kp S          &kp H                  &kp DOWN
+&mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &kp X                   &kp P                          &kp U              &kp Z                  &kp G                       &kp D            &kp Y                     &kp J          &kp LEFT               &kp RIGHT
                                                                         &kp TAB                        &kp SPACE          &kp ESCAPE             &kp BACKSPACE               &kp SPACE        &kp RET
                                                                         &mt PERCENT BSLH               &kp LCTRL          &kt LGUI               &kt LALT                    &kp RCTRL        &mt PIPE SLASH
             >;
+
+            label = "Default";
         };
 
         czech {
             bindings = <
-&to 6   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &sl 5     &sl 3
+&to 0   &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &sl 5     &sl 3
 &trans  &u_krouzek  &z_hacek  &a_carka  &r_hacek  &y_carka    &c_hacek  &e_hacek  &i_carka  &e_carka  &s_hacek  &sl 2
 &trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
 &trans  &trans      &trans    &trans    &trans    &trans      &trans    &trans    &trans    &trans    &trans    &trans
@@ -635,13 +630,13 @@
 
         czech_ext {
             bindings = <
-&trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans    &trans  &trans    &trans    &l_hacek  &trans  &trans
-&trans  &trans  &o_carka  &trans  &trans  &trans    &trans  &t_hacek  &n_hacek  &trans    &trans  &trans
-&trans  &trans  &trans    &trans  &trans  &trans    &trans  &d_hacek  &trans    &trans    &trans  &trans
-                          &trans  &trans  &trans    &trans  &trans    &trans
-                          &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &trans  &trans    &trans    &l_hacek  &trans  &trans
+&trans  &i_carka  &o_carka  &a_carka  &e_carka  &trans    &trans  &t_hacek  &n_hacek  &s_hacek  &trans  &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &trans  &d_hacek  &trans    &trans    &trans  &trans
+                            &trans    &trans    &trans    &trans  &trans    &trans
+                            &trans    &trans    &trans    &trans  &trans    &trans
             >;
         };
 
@@ -681,18 +676,23 @@
             >;
         };
 
-        layer_6 {
+        english_bak {
+            // ------------------------------------------------------------------------------------------------------------
+            // |  ESC   |  1  |  2  |  3   |  4   |  5   |                    |  6   |  7    |  8    |  9   |   0   |   `   |
+            // |  TAB   |  Q  |  W  |  E   |  R   |  T   |                    |  Y   |  U    |  I    |  O   |   P   |   -   |
+            // |  CTRL  |  A  |  S  |  D   |  F   |  G   |                    |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | SHIFT  |  Z  |  X  |  C   |  V   |  B   |                    |  N   |  M    |  ,    |  .   |   /   | SHIFT |
+            // |    2   |  2  | f   | 6    | 4    | 1    |                    | 2    | 1     | w     | s    | n     |  a    |
+
             bindings = <
 &to 1                     &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                 &kp F7                      &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
 &sk LEFT_SHIFT            &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5    &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp EQUAL
-&sl 4                     &kp MINUS             &kp C                   &kp M                          &kp W              &kp K                  &kp Q                       &kp F            &kp R                     &kp L          &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
-&mt SEMICOLON COLON       &kp I                 &kp O                   &kp A                          &kp E              &kp V                  &kp B                       &kp T            &kp N                     &kp S          &kp H                  &kp DOWN
-&mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &kp X                   &kp P                          &kp U              &kp Z                  &kp G                       &kp D            &kp Y                     &kp J          &kp LEFT               &kp RIGHT
+&sl 4                     &mt UNDERSCORE MINUS  &mt LS(C) C             &mt LS(M) M                    &mt LS(W) W        &mt LS(K) K            &mt LS(Q) Q                 &mt LS(F) F      &mt LS(R) R               &mt LS(L) L    &mt DOUBLE_QUOTES SQT  &kp UP_ARROW
+&mt SEMICOLON COLON       &mt LS(I) I           &mt LS(O) O             &mt LS(A) A                    &mt LS(E) E        &mt LS(V) V            &mt LS(B) B                 &mt LS(T) T      &mt LS(N) N               &mt LS(S) S    &mt LS(H) H            &kp DOWN
+&mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &mt LS(X) X             &mt LS(P) P                    &mt LS(U) U        &mt LS(Z) Z            &mt LS(G) G                 &mt LS(D) D      &mt LS(Y) Y               &mt LS(J) J    &kp LEFT               &kp RIGHT
                                                                         &kp TAB                        &kp SPACE          &kp ESCAPE             &kp BACKSPACE               &kp SPACE        &kp RET
                                                                         &mt PERCENT BSLH               &kp LCTRL          &kt LGUI               &kt LALT                    &kp RCTRL        &mt PIPE SLASH
             >;
-
-            label = "Default";
         };
     };
 };

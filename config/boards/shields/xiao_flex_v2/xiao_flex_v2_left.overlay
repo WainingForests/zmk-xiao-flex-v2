@@ -1,5 +1,3 @@
-// xiao_flex_v2_left.overlay
-
 #include "xiao_flex_v2.dtsi" 
 
 &kscan0 {

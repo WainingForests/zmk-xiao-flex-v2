@@ -22,7 +22,6 @@
 &kp TAB          &kp A  &kp S  &kp D      &kp F      &kp G       &rgb_ug RGB_EFF  &rgb_ug RGB_SPD  &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT        &kp Z  &kp X  &kp C      &kp V      &kp B       &kp N            &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp LSHFT
                                &kp LSHFT  &kp SPACE  &kp BSPC    &kp DEL          &kp RET          &kp RGUI
-                                          &kp LALT   &mo 1       &mo 2            &kp RCTRL
             >;
         };
 
@@ -32,7 +31,6 @@
 &kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &trans     &kp FSLH   &kp N4     &kp N5  &kp N6  &kp MINUS
 &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &trans     &kp TAB    &kp N1     &kp N2  &kp N3  &kp PLUS
                                         &bootloader   &trans        &trans          &kp N0     &kp DOT    &kp ENTER
-                                                      &trans        &trans          &trans     &trans
             >;
         };
 
@@ -42,7 +40,6 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp UP       &trans     &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN     &kp RIGHT  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans    &bootloader
-                                &trans  &trans    &trans  &trans
             >;
         };
     };

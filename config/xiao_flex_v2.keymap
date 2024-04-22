@@ -605,7 +605,7 @@
 
         english {
             bindings = <
-&to 1                     &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                   &bt BT_CLR_ALL              &kp F8           &kp F9                    &kp F10        &kp F11                &bt BT_CLR_ALL
+&to 1                     &kp F2                &kp F3                  &kp F4                         &kp F5             &kp F6                   &bt BT_CLR_ALL              &kp F8           &kp F9                    &kp F10        &kp F11                &kp F12
 &to 7                     &mt AT_SIGN NUMBER_1  &mt AMPERSAND NUMBER_2  &mt LEFT_PARENTHESIS NUMBER_3  &mt HASH NUMBER_4  &mt LEFT_BRACKET N5      &mt RIGHT_BRACKET NUMBER_6  &mt ASTERISK N7  &mt RIGHT_PARENTHESIS N8  &mt DOLLAR N9  &mt CARET N0           &kp UP_ARROW
 &sl 4                     &mt UNDERSCORE MINUS  &kp C                   &kp M                          &kp W              &kp K                    &kp Q                       &kp F            &kp R                     &kp L          &mt DOUBLE_QUOTES SQT  &kp DOWN
 &mt SEMICOLON COLON       &kp I                 &kp O                   &kp A                          &kp E              &kp V                    &kp B                       &kp T            &kp N                     &kp S          &kp H                  &kp LEFT

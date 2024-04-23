@@ -597,6 +597,20 @@
 
             label = "U_UMLAUT";
         };
+
+        ru_t: ru_t {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LALT>;
+
+            label = "RU_T";
+        };
     };
 
     keymap {
@@ -700,7 +714,7 @@
 &to 0   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &ru_t   &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans

@@ -624,7 +624,7 @@
 &mt SEMICOLON COLON       &kp I                 &kp O                   &kp A                          &kp E              &kp V                    &kp B                       &kp T            &kp N                     &kp S          &kp H                  &kp LEFT
 &mt EXCLAMATION QUESTION  &mt COMMA PERIOD      &kp X                   &kp P                          &kp U              &kp Z                    &kp G                       &kp D            &kp Y                     &kp J          &mt PIPE SLASH         &kp RIGHT
                                                                         &kp TAB                        &sk LEFT_SHIFT     &mt SPACE RET            &kp BACKSPACE               &kp SPACE        &kp RET
-                                                                        &mt GRAVE TILDE                &kp LCTRL          &mt PERCENT BACKSLASH    &mt LEFT_ALT ESCAPE         &kp RCTRL        &kt LEFT_GUI
+                                                                        &kp LCTRL                      &mt GRAVE TILDE    &mt PERCENT BACKSLASH    &kp RCTRL                   &kp LEFT_WIN     &mt LALT ESC
             >;
 
             label = "Default";

@@ -34,8 +34,8 @@
 &kp F7      &kp F8        &kp F9        &kp F10       &kp F11       &kp F12         &trans            &kp TAB    &kp N1     &kp N2  &kp N3  &kp PLUS
 &trans  &trans  &trans  &trans  &trans  &trans    &trans &trans  &trans  &trans  &trans
         &trans  &trans                                                                      &trans  &trans
-                                        &bootloader   &trans        &trans          &kp N0            &kp DOT    &kp ENTER
-                                                      &trans        &trans          
+                                        &bootloader   &trans        &trans          &kp N0   &kp DOT    &kp ENTER
+                                                      &trans        &trans  &trans            
             >;
         };
 

@@ -21,14 +21,6 @@
 &right_encoder {
     status = "okay";
 };
-    right_encoder: encoder_right {
-        compatible = "alps,ec11";
-        a-gpios = <&gpio1 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
-        status = "disabled";
-    };
-};
 
 &pinctrl {
     spi0_default: spi0_default {

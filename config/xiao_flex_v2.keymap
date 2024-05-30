@@ -25,6 +25,7 @@
                               &kp LSHFT  &kp SPACE  &kp BSPC    &kp DEL  &kp RET  &kp RGUI
                                          &kp LCTRL  &kp LALT
             >;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_1 {
@@ -37,6 +38,7 @@
                                         &trans        &trans        &trans          &trans     &trans     &trans
                                                       &trans        &trans
             >;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         layer_2 {
@@ -49,6 +51,7 @@
                         &trans  &trans  &trans    &trans  &trans    &trans
                                 &trans  &trans
             >;
+sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };

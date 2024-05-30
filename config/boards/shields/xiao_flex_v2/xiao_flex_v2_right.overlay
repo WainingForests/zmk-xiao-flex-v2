@@ -60,4 +60,7 @@
     device = <&trackball>;
 
   };
+&left_encoder {
+    status = "okay";
+};
 };

@@ -26,6 +26,7 @@
          require-prior-idle-ms = <HM_PRIOR_IDLE>;
          flavor = "balanced";
          bindings = <&mo>, <&kp>;
+         hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 41 42 43 47 48 49>;
          };
  
      bl: left_balanced_homerow_mods {
@@ -36,6 +37,7 @@
          require-prior-idle-ms = <HM_PRIOR_IDLE>;
          flavor = "balanced";
          bindings = <&mo>, <&kp>;
+         hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 38 39 40 44 45 46>;
          };
  
      lt: layer_tap {
@@ -47,12 +49,9 @@
          #binding-cells = < 2 >;
          };
      };  
-}; 
-     / {
-     
          keymap {
              compatible = "zmk,keymap";
-         layer_0 {
+         default_layer {
              bindings = <
              &kp LC(W)           &kp Q        &kp W         &kp E        &kp R            &kp T               &kp Y       &kp U          &kp I           &kp O           &kp P          &kp LG(L)
              &kp RC(LG(LEFT))    &bl LWIN  A  &bl LALT S    &bl LCTRL D  &bl LSHFT F      &kp G               &kp H       &br LSHFT J    &br LALT K      &br LALT  L     &br LWIN SEMI  &kp RC(LG(RIGHT_ARROW))

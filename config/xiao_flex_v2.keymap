@@ -16,7 +16,7 @@
  / {
 
     behaviors {
-        br: right_balanced_homerow_mods {
+        bmr: right_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;    
@@ -27,7 +27,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 41 42 43 47 48 49>;
             };
     
-        bl: left_balanced_homerow_mods {
+        bml: left_balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <HM_TAPPING_TERM_FAST>;    
@@ -52,12 +52,12 @@
              compatible = "zmk,keymap";
          BASE {
              bindings = <
-             &kp LC(W)           &kp Q        &kp W         &kp E        &kp R            &kp T               &kp Y       &kp U          &kp I           &kp O           &kp P          &kp LG(L)
-             &kp RC(LG(LEFT))    &bl LWIN  A  &bl LALT S    &bl LCTRL D  &bl LSHFT F      &kp G               &kp H       &br LSHFT J    &br LALT K      &br LALT  L     &br LWIN SEMI  &kp RC(LG(RIGHT_ARROW))
-             &none               &kp Z        &kp X         &kp C        &kp V            &kp B               &kp N       &kp M          &kp COMMA       &kp DOT         &kp FSLH       &none
-                                 &kp HOME     &kp PG_DN     &kp X                                             &none                      &kp END         &kp PAGE_UP
-                                                            &kp ESC      &lt 1 TAB        &lt 0  ENTER        &lt 0 DEL   &lt 0 SPACE    &lt 0 BSPC
-                                                            &mkp RCLK    &mkp LCLK        &mkp MCLK       
+             &kp LC(W)           &kp Q         &kp W          &kp E         &kp R            &kp T               &kp Y       &kp U          &kp I           &kp O           &kp P          &kp LG(L)
+             &kp RC(LG(LEFT))    &bml LWIN  A  &bml LALT S    &bml LCTRL D  &bml LSHFT F     &kp G               &kp H       &bmr LSHFT J   &bmr LALT K     &bmr LALT  L    &bmr LWIN SEMI &kp RC(LG(RIGHT_ARROW))
+             &none               &kp Z         &kp X          &kp C         &kp V            &kp B               &kp N       &kp M          &kp COMMA       &kp DOT         &kp FSLH       &none
+                                 &kp HOME      &kp PG_DN      &kp X                                              &none                      &kp END         &kp PAGE_UP
+                                                              &kp ESC       &lt 1 TAB        &lt 0  ENTER        &lt 0 DEL   &lt 0 SPACE    &lt 0 BSPC
+                                                              &mkp RCLK     &mkp LCLK        &mkp MCLK       
              >;
              sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
          };

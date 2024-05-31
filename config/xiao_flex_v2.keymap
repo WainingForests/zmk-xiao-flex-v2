@@ -23,74 +23,9 @@
                                                             &kp ESC      &lt 1 TAB        &lt 2  ENTER        &lt 3 DEL   &lt 4 SPACE    &lt 5 BSPC
                                                             &mkp RCLK    &mkp LCLK        &mkp MCLK       
              >;
- 
              sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
          };
- 
-         layer_1 {
-             bindings = <
-             &none       &none       &none       &none        &none        &none              &kp FLSH       &kp N7      &kp N8      &kp N9      &kp MINUS       &none
-             &none       &kp LWIN    &kp LALT    &kp LCTRL    &kp LSHFT    &none              &kp LPAR       &kp N4      &kp N5      &kp N6      &kp PLUS        &none
-             &none       &none       &none       &none        &none        &none              &KP RPAR       &kp N1      &kp N2      &kp N3      &trans          &none
-                         &trans      &trans      &none        &none                           &trans                     &kp DOT     &kp N0
-                                                 &trans       &trans       &trans             &trans         &trans      &trans
-                                                 &trans       &trans       &trans      
-             >;
- 
-             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>
-         };
- 
-         layer_2 {
-             bindings = <
-             &none       &none       &none       &none        &none        &none              &kp LC(Y)      &kp LC(V)   &kp LC(C)   &kp LC(X)   &kp LC(Z)       &none
-             &none       &kp LWIN    &kp LALT    &kp LCTRL    &kp LSHFT    &none              &kp CAPS       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT       &none
-             &none       &none       &none       &none        &none        &none              &KP INS        &none       &none       &none       &none           &none
-                         &trans      &trans      &none        &none                           &trans                     &trans      &trans
-                                                 &trans       &trans       &trans             &trans         &trans      &trans
-                                                 &trans       &trans       &trans      
-             >;
- 
-             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>
-         }
- 
-         layer_3 {
-             bindings = <
-             &none       &kp F12     &kp F7      &kp F8       &kp F9       &kp PSCRN          &none          &none       &none       &none       &none           &none
-             &none       &kp F11     &kp F4      &kp F3       &kp F2       &kp SLCK           &none          &kp LSHFT   &kp DOWN    &kp UP      &kp RIGHT       &none
-             &none       &kp F10     &kp F6      &kp F5       &kp F1       &none              &none          &none       &none       &none       &none           &none
-                         &trans      &trans      &none        &none                           &trans                     &trans      &trans
-                                                 &trans       &trans       &trans             &trans         &trans      &trans
-                                                 &trans       &trans       &trans      
-                 >;
-     
-                 sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>
-             };
- 
-         layer_4 {
-             bindings = <
-             &none       &kp LBRC    &kp AMPS    &kp STAR     &kp RBRC     &kp TILDE          &none          &none       &none       &none       &none           &none
-             &none       &kp LPAR    &kp HASH    &kp EXCL     &kp RPAR     &kp PIPE           &none          &kp LSHFT   &kp DOWN    &kp UP      &kp RIGHT       &none
-             &none       &kp LBKT    &kp DOLLAR  &kp AT       &kp RBKT     &none              &none          &none       &none       &none       &none           &none
-                         &trans      &trans      &none        &none                           &trans                     &trans      &trans
-                                                 &trans       &trans       &trans             &trans         &trans      &trans
-                                                 &trans       &trans       &trans      
-             >;
- 
-             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>
-         };
- 
-         layer_5 {
-             bindings = <
-             &bootloader &none         &none           &none           &none            &none                    &none          &none       &none       &none       &none           &none
-             &none       &kp K_PREV    &kp K_VOL_UP    &kp K_VOL_DN    &kp K_NEXT       &ext_power EP_TOG        &none          &kp LSHFT   &kp DOWN    &kp UP      &kp RIGHT       &none
-             &none       &bt BT_SEL 3  &bt BT_SEL 2    &bt BT_SEL 1    &bt BT_SEL 0     &out OUT_TOG             &none          &none       &none       &none       &none           &none
-                         &trans        &trans          &none           &none                                     &trans                     &trans      &trans
-                                                       &kp K_STOP      &kp K_PP         &kp K_MUTE               &trans         &trans      &trans
-                                                       &trans          &trans           &trans            
-             >;
- 
-             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>
-         }; 
-     };
+     }; 
  };
+ 
  

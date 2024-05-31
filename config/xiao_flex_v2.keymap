@@ -40,15 +40,6 @@
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 38 39 40 44 45 46>;
             };
-    
-        lt: layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick-tap-ms = <HM_QUICK_TAP>;
-            bindings = <&kp> <&kp >;
-            #binding-cells = < 2 >;
-            };
         };  
 
          keymap {

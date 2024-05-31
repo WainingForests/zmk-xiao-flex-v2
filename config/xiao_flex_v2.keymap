@@ -16,7 +16,7 @@
  #define HM_PRIOR_IDLE 150
  #define HM_QUICK_TAP 125
  
- 
+ / {
  behaviors {
      br: right_balanced_homerow_mods {
          compatible = "zmk,behavior-hold-tap";
@@ -47,7 +47,7 @@
          #binding-cells = < 2 >;
          };
      };  
-  
+}; 
      / {
      
          keymap {

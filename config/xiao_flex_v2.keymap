@@ -10,6 +10,7 @@
  #include <dt-bindings/zmk/bt.h>
  #include <dt-bindings/zmk/keys.h>
  #include <dt-bindings/zmk/mouse.h>
+ #include <my_behaviors.dtsi>
  
  #define default_layer BASE
  #define layer_1 NUM

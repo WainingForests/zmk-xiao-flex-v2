@@ -49,21 +49,22 @@
                                                               &kp ESC       &lt 1 TAB        &lt 0  ENTER        &lt 0 DEL   &lt 0 SPACE    &lt 0 BSPC
                                                               &mkp RCLK     &mkp LCLK        &mkp MCLK       
              >;
+            
              sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
          };
         
-         NUM {
+         NAV {
             bindings = <
-            &none       &none       &none       &none        &none        &none              &kp FLSH       &kp N7      &kp N8      &kp N9      &kp MINUS       &none
-            &none       &kp LWIN    &kp LALT    &kp LCTRL    &kp LSHFT    &none              &kp LPAR       &kp N4      &kp N5      &kp N6      &kp PLUS        &none
-            &none       &none       &none       &none        &none        &none              &KP RPAR       &kp N1      &kp N2      &kp N3      &trans          &none
-                        &trans      &trans      &none        &none                           &trans                     &kp PERIOD  &kp N0
+            &none       &none       &none       &none        &none        &none              &kp LC(Y)      &kp LC(V)   &kp LC(C)   &kp LC(X)   &kp LC(Z)       &none
+            &none       &kp LWIN    &kp LALT    &kp LCTRL    &kp LSHFT    &none              &kp CAPS       &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT       &none
+            &none       &none       &none       &none        &none        &none              &KP INS        &none       &none       &none       &none           &none
+                        &trans      &trans      &none        &none                           &trans                     &trans      &trans
                                                 &trans       &trans       &trans             &trans         &trans      &trans
                                                 &trans       &trans       &trans      
             >;
+
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>
-        };
- 
+        }
      }; 
  };
  

@@ -11,11 +11,6 @@
  #include <dt-bindings/zmk/keys.h>
  #include <dt-bindings/zmk/mouse.h>
  
- #define HM_TAPPING_TERM 300
- #define HM_TAPPING_TERM_FAST 200
- #define HM_PRIOR_IDLE 150
- #define HM_QUICK_TAP 125
- 
  / {
          keymap {
              compatible = "zmk,keymap";

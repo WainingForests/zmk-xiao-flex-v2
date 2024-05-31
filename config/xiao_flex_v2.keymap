@@ -13,6 +13,9 @@
  
  #define default_layer BASE
  #define layer_1 NUM
+ #define HM_TAPPING_TERM_FAST 200
+ #define HM_QUICK_TAP 125
+ #define HM_PRIOR_IDLE 150
  / {
 
     behaviors {

@@ -84,8 +84,8 @@
         layer_3 {
             bindings = <
 &none  &kp F12   &kp F7    &kp F8     &kp F9     &none     &none      &none     &none     &none      &none     &none
-&none  &kp F11   &kp F4    &kp F3     &kp F2     &none     &none      &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT &none
-&none  &kp F10   &kp F6    &kp F5     &kp F1     &none     &noen      &none     &none     &none      &none     &none
+&none  &kp F11   &kp F4    &kp F3     &kp F2     &none     &none      &kp LSHFT &kp LCTRL &kp LALT   &kp LWIN  &none
+&none  &kp F10   &kp F6    &kp F5     &kp F1     &none     &none      &none     &none     &none      &none     &none
                  &trans    &trans                          &none                &trans    &trans
                            &trans     &trans     &trans    &trans     &trans    &trans
                            &trans     &trans     &trans

@@ -7,12 +7,11 @@
 #include <dt-bindings/led/led.h>
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
-#include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/bt.h>
 
 / {
     behaviors {
@@ -48,11 +47,11 @@
 
         default_layer {
             bindings = <
-&kp LC(W)         &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y      &kp U         &kp I            &kp O        &kp P           &kp LG(L)
-&kp RC(LG(LEFT))  &bml LWIN A  &bml LALT S  &bml LCTRL D  &bml LSHFT F  &kp G          &kp H      &bmr LSHFT J  &bmr LCTRL K      &bmr LALT L  &bmr LWIN SEMI  &kp RC(LG(RIGHT_ARROW))
-&none             &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N      &kp M         &kp COMMA        &kp DOT      &kp SLASH       &none
-                               &kp HOME     &kp PG_DN                                  &none                    &kp PAGE_UP      &kp END
-                                            &kp ESCAPE    &lt 1 TAB     &lt 2 ENTER    &lt 3 DEL  &lt 4 SPACE   &lt 5 BACKSPACE
+&kp LC(W)         &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y             &kp U         &kp I            &kp O        &kp P           &kp LG(L)
+&kp RC(LG(LEFT))  &bml LWIN A  &bml LALT S  &bml LCTRL D  &bml LSHFT F  &kp G          &kp H             &bmr LSHFT J  &bmr LCTRL K     &bmr LALT L  &bmr LWIN SEMI  &kp RC(LG(RIGHT_ARROW))
+&none             &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N             &kp M         &kp COMMA        &kp DOT      &kp SLASH       &none
+                               &kp HOME     &kp PG_DN                                  &kp LA(LS(LEFT))                &kp PAGE_UP      &kp END
+                                            &kp ESCAPE    &lt 1 TAB     &lt 2 ENTER    &lt 3 DEL         &lt 4 SPACE   &lt 5 BACKSPACE
                                             &mkp RCLK     &mkp LCLK     &mkp MB3
             >;
 
@@ -64,7 +63,7 @@
 &none  &none     &none     &none      &none      &none     &kp SLASH  &kp N7  &kp N8  &kp N9      &kp MINUS  &none
 &none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LPAR   &kp N4  &kp N5  &kp N6      &kp PLUS   &none
 &none  &none     &none     &none      &none      &none     &kp RPAR   &kp N1  &kp N2  &kp N3      &trans     &none
-                 &trans    &trans                          &none              &kp N0  &kp PERIOD
+                 &trans    &trans                          &trans             &kp N0  &kp PERIOD
                            &trans     &trans     &trans    &trans     &trans  &trans
                            &trans     &trans     &trans
             >;
@@ -74,11 +73,11 @@
 
         layer_2 {
             bindings = <
-&none  &none     &none     &none      &none      &none     &kp LC(Y)  &kp LC(V) &kp LC(C) &kp LC(X)   &kp LC(Z)  &none
-&none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPS   &kp LEFT  &kp DOWN  &kp UP      &kp RIGHT  &none
-&none  &none     &none     &none      &none      &none     &kp INSERT &none     &none     &none       &none     &none
-                 &trans    &trans                          &none                &trans    &trans
-                           &trans     &trans     &trans    &trans     &trans    &trans
+&none  &none     &none     &none      &none      &none     &kp LC(Y)   &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)  &none
+&none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPS    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
+&none  &none     &none     &none      &none      &none     &kp INSERT  &none      &none      &none      &none      &none
+                 &trans    &trans                          &trans                 &trans     &trans
+                           &trans     &trans     &trans    &trans      &trans     &trans
                            &trans     &trans     &trans
             >;
 
@@ -87,12 +86,12 @@
 
         layer_3 {
             bindings = <
-&none  &kp F12   &kp F7    &kp F8     &kp F9     &none     &none      &none     &none     &none      &none     &none
-&none  &kp F11   &kp F4    &kp F3     &kp F2     &none     &none      &kp LSHFT &kp LCTRL &kp LALT   &kp LWIN  &none
-&none  &kp F10   &kp F6    &kp F5     &kp F1     &none     &none      &none     &none     &none      &none     &none
-                 &trans    &trans                          &none                &trans    &trans
-                           &trans     &trans     &trans    &trans     &trans    &trans
-                           &trans     &trans     &trans
+&none  &kp F12  &kp F7  &kp F8  &kp F9  &none     &none   &none      &none      &none     &none     &none
+&none  &kp F11  &kp F4  &kp F3  &kp F2  &none     &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
+&none  &kp F10  &kp F6  &kp F5  &kp F1  &none     &none   &none      &none      &none     &none     &none
+                &trans  &trans                    &trans             &trans     &trans
+                        &trans  &trans  &trans    &trans  &trans     &trans
+                        &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -100,12 +99,12 @@
 
         layer_4 {
             bindings = <
-&none  &kp LBRC  &kp AMPS   &kp STAR   &kp RBRC   &kp TILDE &none      &none     &none     &none      &none     &none
-&none  &kp LPAR  &kp HASH   &kp EXCL   &kp RPAR   &kp PIPE  &none      &kp LSHFT &kp LCTRL &kp LALT   &kp LWIN  &none
-&none  &kp LBKT  &kp DOLLAR &kp AT     &kp RBKT   &none     &none      &none     &none     &none      &none     &none
-                 &trans     &trans                          &none                &trans    &trans
-                            &trans     &trans     &trans    &trans     &trans    &trans
-                            &trans     &trans     &trans
+&none  &kp LBRC  &kp AMPS    &kp STAR  &kp RBRC  &kp TILDE    &none   &none      &none      &none     &none     &none
+&none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PIPE     &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
+&none  &kp LBKT  &kp DOLLAR  &kp AT    &kp RBKT  &none        &none   &none      &none      &none     &none     &none
+                 &trans      &trans                           &trans             &trans     &trans
+                             &trans    &trans    &trans       &trans  &trans     &trans
+                             &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
@@ -113,15 +112,15 @@
 
         layer_5 {
             bindings = <
-&bootloader  &none        &none         &none        &none        &none              &none      &none     &none     &none      &none     &none
-&none        &kp K_PREV   &kp K_VOL_UP  &kp K_VOL_DN &kp K_NEXT   &ext_power EP_TOG  &none      &kp LSHFT &kp LCTRL &kp LALT   &kp LWIN  &none
-&none        &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG       &none      &none     &none     &none      &none     &none
-                          &trans        &trans                                       &none                &trans    &trans
-                                        &kp K_STOP   &kp K_PP     &kp K_MUTE         &trans     &trans    &trans
-                                        &trans       &trans       &trans
+&bootloader  &none         &none         &none         &none         &none                &none   &none      &none      &none     &none     &none
+&none        &kp K_PREV    &kp K_VOL_UP  &kp K_VOL_DN  &kp K_NEXT    &ext_power EP_TOG    &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_TOG         &none   &none      &none      &none     &none     &none
+                           &trans        &trans                                           &trans             &trans     &trans
+                                         &kp K_STOP    &kp K_PP      &kp K_MUTE           &trans  &trans     &trans
+                                         &trans        &trans        &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };

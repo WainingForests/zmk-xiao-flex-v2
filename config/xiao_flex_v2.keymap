@@ -48,7 +48,7 @@
 &kp RC(LG(LEFT))  &bml LWIN A  &bml LALT S  &bml LCTRL D  &bml LSHFT F  &kp G          &kp H      &bmr LSHFT J  &bmr LALT K      &bmr LALT L  &bmr LWIN SEMI  &kp RC(LG(RIGHT_ARROW))
 &none             &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N      &kp M         &kp COMMA        &kp DOT      &kp SLASH       &none
                                &kp HOME     &kp PG_DN                                  &none                    &kp PAGE_UP      &kp END
-                                            &kp ESCAPE    &lt 1 TAB     &lt 2 ENTER    &lt 3 DEL  &lt 1 SPACE   &lt 1 BACKSPACE
+                                            &kp ESCAPE    &lt 1 TAB     &lt 2 ENTER    &lt 3 DEL  &lt 4 SPACE   &lt 1 BACKSPACE
                                             &mkp RCLK     &mkp LCLK     &mkp MB3
             >;
 
@@ -97,7 +97,7 @@
         layer_4 {
             bindings = <
 &none  &kp LBRC  &kp AMPS   &kp STAR   &kp RBRC   &kp TILDE &none      &none     &none     &none      &none     &none
-&none  &kp LPAR  &kp HASH   &kp F3     &kp RPAR   &kp PIPE  &none      &kp LSHFT &kp LCTRL &kp LALT   &kp LWIN  &none
+&none  &kp LPAR  &kp HASH   &kp EXCL   &kp RPAR   &kp PIPE  &none      &kp LSHFT &kp LCTRL &kp LALT   &kp LWIN  &none
 &none  &kp LBKT  &kp DOLLAR &kp AT     &kp RBKT   &none     &none      &none     &none     &none      &none     &none
                  &trans     &trans                          &none                &trans    &trans
                             &trans     &trans     &trans    &trans     &trans    &trans

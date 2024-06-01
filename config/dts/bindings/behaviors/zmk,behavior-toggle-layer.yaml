@@ -1,8 +1,0 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-description: Toggle Layer
-
-compatible: "zmk,behavior-toggle-layer"
-
-include: one_param.yaml

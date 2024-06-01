@@ -1,8 +1,0 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-description: To Layer
-
-compatible: "zmk,behavior-to-layer"
-
-include: one_param.yaml

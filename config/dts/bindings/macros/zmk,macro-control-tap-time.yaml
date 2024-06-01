@@ -1,8 +1,0 @@
-# Copyright (c) 2022 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-description: Set Macro Tap Duration
-
-compatible: "zmk,macro-control-tap-time"
-
-include: one_param.yaml

@@ -1,8 +1,0 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-description: Output Selection Behavior
-
-compatible: "zmk,behavior-outputs"
-
-include: one_param.yaml

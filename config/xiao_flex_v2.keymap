@@ -48,7 +48,7 @@
 &kp RC(LG(LEFT))  &bml LWIN A  &bml LALT S  &bml LCTRL D  &bml LSHFT F  &kp G          &kp H      &bmr LSHFT J  &bmr LALT K      &bmr LALT L  &bmr LWIN SEMI  &kp RC(LG(RIGHT_ARROW))
 &none             &kp Z        &kp X        &kp C         &kp V         &kp B          &kp N      &kp M         &kp COMMA        &kp DOT      &kp SLASH       &none
                                &kp HOME     &kp PG_DN                                  &none                    &kp PAGE_UP      &kp END
-                                            &kp ESCAPE    &lt 1 TAB     &lt 1 ENTER    &lt 1 DEL  &lt 1 SPACE   &lt 1 BACKSPACE
+                                            &kp ESCAPE    &lt 1 TAB     &lt 2 ENTER    &lt 1 DEL  &lt 1 SPACE   &lt 1 BACKSPACE
                                             &mkp RCLK     &mkp LCLK     &mkp MB3
             >;
 
@@ -62,6 +62,19 @@
 &none  &none     &none     &none      &none      &none     &kp RPAR   &kp N1  &kp N2  &kp N3      &trans     &none
                  &trans    &trans                          &none              &kp N0  &kp PERIOD
                            &trans     &trans     &trans    &trans     &trans  &trans
+                           &trans     &trans     &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+        };
+
+        layer_2 {
+            bindings = <
+&none  &none     &none     &none      &none      &none     &kp LC(Y)  &kp LC(V) &kp LC(C) &kp LC(X)   &kp LC(Z)  &none
+&none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPS   &kp LEFT  &kp DOWN  &kp UP      &kp RIGHT  &none
+&none  &none     &none     &none      &none      &none     &kp INSERT &none     &none     &none       &none     &none
+                 &trans    &trans                          &none                &trans                &trans
+                           &trans     &trans     &trans    &trans     &trans    &trans
                            &trans     &trans     &trans
             >;
 

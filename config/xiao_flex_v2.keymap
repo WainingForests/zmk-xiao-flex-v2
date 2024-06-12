@@ -101,7 +101,7 @@
             bindings = <
 &none  &kp LBRC  &kp AMPS    &kp STAR  &kp RBRC  &kp TILDE       &none   &none      &none      &none     &none     &none
 &none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PIPE        &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
-&none  &kp LBKT  &kp DOLLAR  &kp AT    &kp RBKT  &kp KP_SLASH    &none   &none      &none      &none     &none     &none
+&none  &kp LBKT  &kp DOLLAR  &kp AT    &kp RBKT  &kp QUESTION    &none   &none      &none      &none     &none     &none
                  &trans      &trans                              &trans             &trans     &trans
                              &trans    &trans    &trans          &trans  &trans     &trans
                              &trans    &trans    &trans

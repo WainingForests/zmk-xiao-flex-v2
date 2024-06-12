@@ -62,7 +62,7 @@
                                             &mkp RCLK      &mkp LCLK     &mkp MB3
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+        sensor-bindings = <&mscrl> ;
         };
 
         layer_1 {

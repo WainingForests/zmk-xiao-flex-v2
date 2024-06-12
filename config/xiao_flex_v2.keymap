@@ -46,6 +46,8 @@
             label = "MSCRL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCROLL_UP>, <&msc SCROLL_DOWN>;
+
+            tap-ms = <5>;
         };
     };
 
@@ -62,7 +64,7 @@
                                             &mkp RCLK      &mkp LCLK     &mkp MB3
             >;
 
-        sensor-bindings = <&mscrl> ;
+            sensor-bindings = <&mscrl>;
         };
 
         layer_1 {

@@ -44,7 +44,7 @@
         mscrl: mscrl {
             compatible = "zmk,behavior-sensor-rotate";
             label = "MSCRL";
-            #sensor-binding-cells = <2>;
+            #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_UP>, <&msc MOVE_DOWN>;
 
             tap-ms = <5>;

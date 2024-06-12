@@ -47,15 +47,15 @@
 
         default_layer {
             bindings = <
-&kp LC(W)         &kp Q        &kp W        &kp E          &kp R         &kp T          &kp Y         &kp U           &kp I            &kp O        &kp P           &kp LG(L)
-&kp RC(LG(LEFT))  &bml LWIN A  &bml LALT S  &bml LCTRL D   &bml LSHFT F  &kp G          &kp H         &bmr LSHFT J    &bmr LCTRL K     &bmr LALT L  &bmr LWIN SEMI  &kp RC(LG(RIGHT_ARROW))
-&none             &kp Z        &kp X        &kp C          &kp V         &kp B          &kp N         &kp M           &kp COMMA        &kp DOT      &kp SLASH       &none
-                               &kp HOME     &kp PAGE_DOWN                               &kp LA(LEFT)                  &kp PAGE_UP      &kp END
-                                            &kp ESCAPE     &lt 1 TAB     &lt 2 ENTER    &lt 3 DEL     &lt 4 BACKSPACE &lt 5 SPACE
+&kp LC(W)         &kp Q        &kp W        &kp E          &kp R         &kp T          &kp Y         &kp U            &kp I         &kp O        &kp P           &kp LG(L)
+&kp RC(LG(LEFT))  &bml LWIN A  &bml LALT S  &bml LCTRL D   &bml LSHFT F  &kp G          &kp H         &bmr LSHFT J     &bmr LCTRL K  &bmr LALT L  &bmr LWIN SEMI  &kp RC(LG(RIGHT_ARROW))
+&bootloader       &kp Z        &kp X        &kp C          &kp V         &kp B          &kp N         &kp M            &kp COMMA     &kp DOT      &kp SLASH       &none
+                               &kp HOME     &kp PAGE_DOWN                               &kp LA(LEFT)                   &kp PAGE_UP   &kp END
+                                            &kp ESCAPE     &lt 1 TAB     &lt 2 ENTER    &lt 3 DEL     &lt 4 BACKSPACE  &lt 5 SPACE
                                             &mkp RCLK      &mkp LCLK     &mkp MB3
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_1 {
@@ -68,7 +68,7 @@
                            &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_2 {
@@ -81,7 +81,7 @@
                            &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_3 {
@@ -94,7 +94,7 @@
                         &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_4 {
@@ -107,7 +107,7 @@
                              &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_5 {

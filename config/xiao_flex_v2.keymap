@@ -40,6 +40,13 @@
             hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 38 39 40>;
             hold-trigger-on-release;
         };
+
+        mousescroll: mousescroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSESCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCROLL_UP>, <&msc SCROLL_DOWN>;
+        };
     };
 
     keymap {
@@ -68,7 +75,7 @@
                            &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&mousescroll>;
         };
 
         layer_2 {
@@ -81,7 +88,7 @@
                            &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&mousescroll>;
         };
 
         layer_3 {
@@ -94,20 +101,20 @@
                         &trans  &trans  &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&mousescroll>;
         };
 
         layer_4 {
             bindings = <
-&none  &kp LBRC  &kp AMPS    &kp STAR  &kp RBRC  &kp TILDE       &none   &none      &none      &none     &none     &none
-&none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PIPE        &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
-&none  &kp LBKT  &kp DOLLAR  &kp AT    &kp RBKT  &kp QUESTION    &none   &none      &none      &none     &none     &none
-                 &trans      &trans                              &trans             &trans     &trans
-                             &trans    &trans    &trans          &trans  &trans     &trans
+&none  &kp LBRC  &kp AMPS    &kp STAR  &kp RBRC  &kp TILDE    &none   &none      &none      &none     &none     &none
+&none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PIPE     &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
+&none  &kp LBKT  &kp DOLLAR  &kp AT    &kp RBKT  &kp SLASH    &none   &none      &none      &none     &none     &none
+                 &trans      &trans                           &trans             &trans     &trans
+                             &trans    &trans    &trans       &trans  &trans     &trans
                              &trans    &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+            sensor-bindings = <&mousescroll>;
         };
 
         layer_5 {

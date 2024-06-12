@@ -114,7 +114,7 @@
             bindings = <
 &bootloader  &none         &none         &none         &none         &none                &none   &none      &none      &none     &none     &none
 &none        &kp K_PREV    &kp K_VOL_UP  &kp K_VOL_DN  &kp K_NEXT    &ext_power EP_TOG    &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_TOG         &none   &none      &none      &none     &none     &none
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &out OUT_TOG         &none   &none      &none      &none     &none     &none
                            &trans        &trans                                           &trans             &trans     &trans
                                          &kp K_STOP    &kp K_PP      &kp K_MUTE           &trans  &trans     &trans
                                          &trans        &trans        &trans

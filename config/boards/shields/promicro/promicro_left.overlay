@@ -1,4 +1,4 @@
-// xiao_flex_v2_left.overlay
+// promicro_left.overlay
 
 #include "promicro.dtsi" 
 

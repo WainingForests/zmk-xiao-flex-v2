@@ -1,0 +1,10 @@
+# config SHIELD_PROMICRO
+#     bool
+
+config SHIELD_PROMICRO_LEFT
+    def_bool $(shields_list_contains,promicro_left)
+#     select SHIELD_PROMICRO
+
+config SHIELD_PROMICRO_RIGHT
+    def_bool $(shields_list_contains,promicro_right)
+#     select SHIELD_PROMICRO

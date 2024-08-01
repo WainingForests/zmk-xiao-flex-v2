@@ -109,7 +109,7 @@
         layer_4 {
             bindings = <
 &none  &kp LBRC  &kp AMPS    &kp STAR  &kp RBRC  &kp TILDE        &none   &none      &none      &none     &none     &none
-&none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PIPE         &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
+&none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PERCENT      &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
 &none  &kp LBKT  &kp DOLLAR  &kp AT    &kp RBKT  &kp BACKSLASH    &none   &none      &none      &none     &none     &none
                  &trans      &trans                               &trans             &trans     &trans
                              &trans    &trans    &trans           &trans  &trans     &trans

@@ -70,7 +70,7 @@
         layer_1 {
             bindings = <
 &none  &none     &none     &none      &none      &none     &kp SLASH  &kp N7  &kp N8  &kp N9      &kp MINUS  &none
-&none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp LPAR   &kp N4  &kp N5  &kp N6      &kp PLUS   &none
+&none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp PRCNT  &kp N4  &kp N5  &kp N6      &kp PLUS   &none
 &none  &none     &none     &none      &none      &none     &kp RPAR   &kp N1  &kp N2  &kp N3      &trans     &none
                  &trans    &trans                          &trans             &kp N0  &kp PERIOD
                            &trans     &trans     &trans    &trans     &trans  &trans
@@ -82,11 +82,11 @@
 
         layer_2 {
             bindings = <
-&none  &none     &none     &none      &none      &none     &none       &none     &kp UP     &none      &none  &none
-&none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPS    &kp LEFT  &kp DOWN   &kp RIGHT  &none  &none
-&none  &none     &none     &none      &none      &none     &kp INSERT  &none     &none      &none      &none  &none
-                 &kp HOME  &kp PG_DN                       &trans                &kp PG_UP  &kp END
-                           &trans     &trans     &trans    &trans      &trans    &trans
+&none  &none     &none     &none      &none      &none     &none     &none     &kp UP     &none      &none  &none
+&none  &kp LWIN  &kp LALT  &kp LCTRL  &kp LSHFT  &none     &kp CAPS  &kp LEFT  &kp DOWN   &kp RIGHT  &none  &none
+&none  &none     &none     &none      &none      &none     &none     &none     &none      &none      &none  &none
+                 &kp HOME  &kp PG_DN                       &trans              &kp PG_UP  &kp END
+                           &trans     &trans     &trans    &trans    &trans    &trans
                            &trans     &trans     &trans
             >;
 
@@ -109,7 +109,7 @@
         layer_4 {
             bindings = <
 &none  &kp LBRC  &kp AMPS    &kp STAR  &kp RBRC  &kp TILDE        &none   &none      &none      &none     &none     &none
-&none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PERCENT      &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
+&none  &kp LPAR  &kp HASH    &kp EXCL  &kp RPAR  &kp PRCNT        &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
 &none  &kp LBKT  &kp DOLLAR  &kp AT    &kp RBKT  &kp BACKSLASH    &none   &none      &none      &none     &none     &none
                  &trans      &trans                               &trans             &trans     &trans
                              &trans    &trans    &trans           &trans  &trans     &trans

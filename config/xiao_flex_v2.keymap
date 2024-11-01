@@ -108,12 +108,12 @@
 
         layer_4 {
             bindings = <
-&none  &kp LEFT_BRACE  &kp AMPS    &kp STAR  &kp RIGHT_BRACE  &kp GRAVE        &none   &none      &none      &none     &none     &none
-&none  &kp LPAR        &kp HASH    &kp EXCL  &kp RPAR         &kp PRCNT        &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
-&none  &kp LBKT        &kp DOLLAR  &kp AT    &kp RBKT         &kp BACKSLASH    &none   &none      &none      &none     &none     &none
-                       &trans      &trans                                      &trans             &trans     &trans
-                                   &trans    &trans           &trans           &trans  &trans     &trans
-                                   &trans    &trans           &trans
+&kp GRAVE  &kp LEFT_BRACE  &kp AMPS    &kp STAR  &kp RIGHT_BRACE  &kp TILDE        &none   &none      &none      &none     &none     &none
+&kp CARET  &kp LPAR        &kp HASH    &kp EXCL  &kp RPAR         &kp PRCNT        &none   &kp LSHFT  &kp LCTRL  &kp LALT  &kp LWIN  &none
+&kp PIPE   &kp LBKT        &kp DOLLAR  &kp AT    &kp RBKT         &kp BACKSLASH    &none   &none      &none      &none     &none     &none
+                           &trans      &trans                                      &trans             &trans     &trans
+                                       &trans    &trans           &trans           &trans  &trans     &trans
+                                       &trans    &trans           &trans
             >;
 
             sensor-bindings = <&mscrl>;

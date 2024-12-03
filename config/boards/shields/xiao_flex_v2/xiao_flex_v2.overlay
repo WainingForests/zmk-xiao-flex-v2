@@ -1,10 +1,4 @@
-// xiao_flex_v2_right.overlay
-
-#include "xiao_flex_v2.dtsi"
-
-&default_transform {
-    col-offset = <6>;
-};
+#include "xiao_flex_v2.dtsi" 
 
 &kscan0 {
     col-gpios

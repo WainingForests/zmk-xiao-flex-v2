@@ -1,16 +1,5 @@
-if SHIELD_XIAO_FLEX_V2_LEFT
-
+if XIAO_FLEX_V2
 config ZMK_KEYBOARD_NAME
-    default "xiao_flex_v2"
-
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
-endif
-
-if SHIELD_XIAO_FLEX_V2
-
-config ZMK_SPLIT
-    default y
+    default "Skree Custom"
 
 endif
